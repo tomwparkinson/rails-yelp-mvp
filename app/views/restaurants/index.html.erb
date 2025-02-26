@@ -1,8 +1,8 @@
 <h1>List of Restaurants</h1>
 
-<ul id = "restaurants">
+<ul id = "restaurants" style="list-style: none;">
   <% @restaurants.each do |restaurant| %>
-    <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
+    <li><%= link_to restaurant.name, restaurant_path(restaurant), class: "btn btn-secondary m-1"%></li>
   <% end %>
 </ul>
 
